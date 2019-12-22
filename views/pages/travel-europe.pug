@@ -7,225 +7,306 @@ html
   include includes/links.pug
 
   body.about
-    <div class="typewriter">
-      h1.typewriter-text-personal Europe
+    <div class="typewriter" id="top">
+     <div class="typewriter-text">Europe</div>
     </div> 
+
+    br
+    br
+    br
   
-    h3.travelTop Belgium
+    <a class="travelBarFirst" href="#Belgium">Belgium</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#CzechRepublic">Czech Republic</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#France">France</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Georgia">Georgia</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Greece">Greece</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Italy">Italy</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Malta">Malta</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    br
+    <a class="travelBarFirst" href="#Monacco">Monacco</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Netherlands">Netherlands</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Portugal">Portugal</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Spain">Spain</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Sweden">Sweden</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Switzerland">Switzerland</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#UnitedKingdom">United Kingdom</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+
+    h3.travelTop(id="Belgium") Belgium
 
     p.travel 
-      | Brugge, Brussels
+      | Brugge
 
-    h3.travel Czech Republic
+    img#travel(src="images/brugge.JPG")
+
+    p.travel 
+      | Brussels
+
+    img#travel(src="images/brussels.JPG")
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="CzechRepublic") Czech Republic
 
     p.travel 
       | Prague
 
-    h3.travel France
+    img#travel(src="images/prague.JPG")
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="France") France
 
     p.travel 
-      | Paris, Nice
+      | Nice
 
-    h3.travel Georgia
+    img#travel(src="images/nice.JPG")
 
     p.travel 
-      | Tblisi, Shatili, Signaghi
+      | Paris
+    
+    img#travel(src="images/paris.JPG")
 
-    h3.travel Greece
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Georgia") Georgia
+
+    p.travel 
+      | Roshka
+
+    img#travel(src="images/roshka.jpg")
+
+    p.travel 
+      | Shatili
+  
+    img#travel(src="images/shatili.jpg")
+
+    p.travel 
+      | Sighnaghi
+
+    img#travel(src="images/sighnaghi.JPG")
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Greece") Greece
 
     p.travel 
       | Athens
 
-    h3.travel Italy
+    img#travel(src="images/athens.JPG")
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Italy") Italy
 
     p.travel 
-      | Rome, Milan, Venice, Florence
+      | Florence
 
-    h3.travel Malta
+    p.travel 
+      | Milan
+
+    p.travel 
+      | Rome 
+
+    p.travel 
+      | Venice
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Malta") Malta
 
     p.travel 
       | Malta
 
-    h3.travel Monacco
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Monacco") Monacco
 
     p.travel 
       | Monacco
 
-    h3.travel Netherlands
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Netherlands") Netherlands
 
     p.travel 
-      | Amsterdam, Den Haag
+      | Amsterdam
+      
+    p.travel 
+      | Den Haag
 
-    h3.travel Portugal
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Portugal") Portugal
 
     p.travel 
-      | Lisbon, Portugal
+      | Lisbon
+      
+    p.travel 
+      | Porto
 
-    h3.travel Spain
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Spain") Spain
 
     p.travel 
-      | Barcelona, Madrid
+      | Barcelona
+      
+    p.travel 
+      | Madrid
 
-    h3.travel Sweden
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Sweden") Sweden
 
     p.travel 
-      | Gothenburg, Stockholm, Uppsala
+      | Gothenburg
+      
+    p.travel 
+      | Stockholm
+      
+    p.travel 
+      | Uppsala
 
-    h3.travel Switzerland
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Switzerland") Switzerland
 
     p.travel 
-      | Geneva, Zurich
+      | Geneva
+    
+    p.travel 
+      | Zurich
 
-    h3.travel United Kingdom
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="UnitedKingdom") United Kingdom
 
     p.travel 
-      | London, Ediburgh, Glasgow, Sunderland, Liverpool, Manchester
+      | Cotswolds
+    
+    p.travel 
+      | Coventry
+      
+    p.travel 
+      | London
+    
+    p.travel 
+      | Ediburgh
+      
+    p.travel 
+      | Glasgow
+      
+    p.travel 
+      | Sunderland
+      
+    p.travel 
+      | Liverpool
+      
+    p.travel 
+      | Manchester
 
-    img#personal(src="webpage/indonesia.jpg")
-
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
     h3.quoteBottom "Allt är inte guld som glimmar. Allt sak har sin tid"
       br
       | "All that glimmers is not gold. All things have their time"
       br
       | J.R.R. Tolkien
-
-
-//-     <div class="travelSlides">
-//-     <div class="mySlides">
-//-         <div class="numbertext">Buenos Aires, Argentina</div>
-//-         <img src="webpage/argentina.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Brussels, Belgium</div>
-//-         <img src="webpage/belgium.JPG">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Siam Reap, Cambodia</div>
-//-         <img src="webpage/cambodia.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Pemberton, Canada</div>
-//-         <img src="webpage/canada.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Santiago, Chile</div>
-//-         <img src="webpage/chile.jpg">
-//-     </div>
-    
-//-     <div class="mySlides">
-//-         <div class="numbertext">Guatape, Colombia</div>
-//-         <img src="webpage/colombia.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Parco Manuel Antonio, Costa Rica</div>
-//-         <img src="webpage/costaRica.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Praha, Czech Republic</div>
-//-         <img src="webpage/czechRepublic.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Frederiksborg Slot, Hillerød, Denmark</div>
-//-         <img src="webpage/denmark.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Nice, France</div>
-//-         <img src="webpage/france.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Athens, Greece</div>
-//-         <img src="webpage/greece.JPG">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Hong Kong</div>
-//-         <img src="webpage/hongKong.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Bali, Indonesia</div>
-//-         <img src="webpage/indonesia.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Venetia, Italy</div>
-//-         <img src="webpage/italy.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Kota Kinabalu, Malaysia</div>
-//-         <img src="webpage/malaysia.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Ciudad Mexico, Mexico</div>
-//-         <img src="webpage/mexico.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Monaco</div>
-//-         <img src="webpage/monaco.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Amsterdam, Netherlands</div>
-//-         <img src="webpage/netherlands.JPG">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Cusco, Peru</div>
-//-         <img src="webpage/peru.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Porto, Portugal</div>
-//-         <img src="webpage/porto.JPG">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Singapore</div>
-//-         <img src="webpage/singapore.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Barcelona, Spain</div>
-//-         <img src="webpage/spain.JPG">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Château de Chillon, Switzerland</div>
-//-         <img src="webpage/switzerland.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Chiang Mai, Thailand</div>
-//-         <img src="webpage/Thailand.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Edinburgh, UK</div>
-//-         <img src="webpage/uk.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Monteviedo, Uruguay</div>
-//-         <img src="webpage/uruguay.jpg">
-//-     </div>
-
-//-     <div class="mySlides">
-//-         <div class="numbertext">Grand Canyon, Nevada, USA</div>
-//-         <img src="webpage/usa.jpg">
-//-     </div>
-//- </div>
-  script(src="/javascripts/main.js")
-
-  

@@ -253,6 +253,43 @@ h3.travel {
     text-align: left;
 }
 
+.travelBarFirst {
+    background-color: #fafafafa;
+    color: rgb(59, 57, 57);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 32px;
+    margin-left: 10%;
+    margin-top: 120px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.travelBackTop {
+    background-color: #fafafafa;
+    color: rgb(59, 57, 57);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 32px;
+    margin-top: 120px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.travelBar {
+    background-color: #fafafafa;
+    color: rgb(59, 57, 57);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 32px;
+    margin-top: 120px;
+    text-align: left;
+    text-decoration: none;
+}
+
 p.main {
     color: rgb(29, 26, 26);
     font-size: 1.5vw;
@@ -355,7 +392,7 @@ li.about {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     top: 0;
     left: 0;
     background-color: #111;
@@ -408,6 +445,7 @@ li.about {
     background-color: inherit;
     font-family: inherit;
     text-align: center;
+    margin-left: 25px;
 }
 
 
@@ -419,7 +457,7 @@ li.about {
     background-color: inherit;
     /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 9999;
     text-align: center;
     margin-left: 50px;
 }
@@ -576,7 +614,7 @@ linkbar {
     text-align: center;
     width: 100%;
     /* Set the width of the navbar */
-    z-index: 9999;
+    z-index: 10;
 }
 
 .linkbar {
@@ -722,9 +760,16 @@ img {
     margin-bottom: 0px;
 }
 
+#travel {
+    width: 30%;
+    height: 50%;
+    margin-bottom: 0px;
+}
+
 .typewriter {
     font-family: Courier, monospace;
     display: inline-block;
+    padding-top: 10px;
 }
 
 .typewriter-text {

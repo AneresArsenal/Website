@@ -7,41 +7,139 @@ html
   include includes/links.pug
 
   body.about
-    <div class="typewriter">
-      h1.typewriter-text-personal Asia
+    <div class="typewriter" id="top">
+      <div class="typewriter-text">Asia</div>
     </div> 
   
-    h3.travelTop Cambodia
+    br
+    br
+    br
+
+    <a class="travelBarFirst" href="#Cambodia">Cambodia</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#HongKong">Hong Kong</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Indonesia">Indonesia</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Malaysia">Malaysia</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Singapore">Singapore</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Thailand">Thailand</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Turkey">Turkey</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+
+    h3.travelTop(id="Cambodia") Cambodia
 
     p.travel 
       | Siam Reap
 
-    h3.travel Hong Kong
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="HongKong") Hong Kong
 
     p.travel 
       | Hong Kong
 
-    h3.travel Indonesia
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Indonesia") Indonesia
 
     p.travel 
-      | Bali, Yogyakarta
+      | Bali
+      
+    p.travel 
+      | Yogyakarta
 
-    h3.travel Malaysia
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Malaysia") Malaysia
 
     p.travel 
-      | Kuala Lumpur, Penang, Kota Kinabalu, Sandakan
+      | Kuala Lumpur
+      
+    p.travel 
+      | Penang
+      
+    p.travel 
+      | Kota Kinabalu
+    
+    p.travel 
+      | Sandakan
 
-    h3.travel Singapore
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Singapore") Singapore
 
     p.travel 
       | Singapore
 
-    h3.travel Thailand
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Thailand") Thailand
 
     p.travel 
-      | Chiang Mai, Koh Phi Phi, Krabi
+      | Chiang Mai
+      
+    p.travel 
+      | Koh Phi Phi
+    
+    p.travel 
+      | Krabi
 
-    img#personal(src="webpage/indonesia.jpg")
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Turkey") Turkey
+
+    p.travel 
+      | Istanbul
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    img#travel(src="webpage/indonesia.jpg")
 
     h3.quoteBottom "Allt är inte guld som glimmar. Allt sak har sin tid"
       br
