@@ -1,42 +1,127 @@
 html
   head
-    title Europe
+    title North America
     link(rel="stylesheet", href="/stylesheets/main.css")
     include includes/header.pug
   include includes/navbar.pug
   include includes/links.pug
 
   body.about
-    <div class="typewriter">
-      h1.typewriter-text-personal Europe
+    <div class="typewriter" id="top">
+      <div class="typewriter-text">North America</div>
     </div> 
   
-    h3.travelTop Czech Republic
+    br
+    br
+    br
+
+    <a class="travelBarFirst" href="#Canada">Canada</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#CostaRica">Costa Rica</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Mexico">Mexico</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#USA">United States of America</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    h3.travelTop(id="Canada") Canada
 
     p.travel 
-      | Prague
+      | Calgary
+    
+    p.travel 
+      | Vancouver
+      
+    p.travel 
+      | Montreal
+    
+    p.travel 
+      | Yukon
 
-    h3.travel France
+
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="CostaRica") Costa Rica
 
     p.travel 
-      | Paris, Nice
+      | San José
+      
+    p.travel 
+      | Cahuita
+      
+    p.travel 
+      | Quepos
 
-    h3.travel Italy
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="Mexico") Mexico
 
     p.travel 
-      | Rome, Milan, Venice, Florence
+      | Mazatlan
+      
+    p.travel 
+      | Mexico City
 
-    h3.travel Netherlands
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    h3.travel(id="USA") United States of America
 
     p.travel 
-      | Amsterdam, Den Haag
-
-    h3.travel United Kingdom
+      | Boulder
+      
+    p.travel 
+      | Dallas
+      
+    p.travel 
+      | Denver
+      
+    p.travel 
+      | Las Vegas
+    
+    p.travel 
+      | Los Angeles
+      
+    p.travel 
+      | New York City
+      
+    p.travel 
+      | Portland
 
     p.travel 
-      | London, Ediburgh, Glasgow, Sunderland, Liverpool, Manchester
+      | San Francisco
+      
+    p.travel 
+      | Seattle
+      
+    p.travel 
+      | Washington (DC)
 
-    img#personal(src="webpage/indonesia.jpg")
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    
+    img#travel(src="webpage/indonesia.jpg")
 
     h3.quoteBottom "Allt är inte guld som glimmar. Allt sak har sin tid"
       br

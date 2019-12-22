@@ -1,42 +1,125 @@
 html
   head
-    title Europe
+    title South America
     link(rel="stylesheet", href="/stylesheets/main.css")
     include includes/header.pug
   include includes/navbar.pug
   include includes/links.pug
 
   body.about
-    <div class="typewriter">
-      h1.typewriter-text-personal Europe
+
+    <div class="typewriter" id="top">
+      div.typewriter-text South America
     </div> 
+
+    br
+    br
+    br
+
+    <a class="travelBarFirst" href="#Argentina">Argentina</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Chile">Chile</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Colombia">Colombia</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Peru">Peru</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+    <a class="travelBar" href="#Uruguay">Uruguay</a>
+    <a class="travelBar">&nbsp;&nbsp;&nbsp;&nbsp;</a>
   
-    h3.travelTop Czech Republic
+    h3.travelTop(id="Argentina") Argentina
 
     p.travel 
-      | Prague
+      | Buenas Aires
+      
+    p.travel 
+      | Córdoba
+    
+    p.travel 
+      | Perito Moreno
 
-    h3.travel France
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+
+    h3.travel(id="Chile") Chile
 
     p.travel 
-      | Paris, Nice
+      | Santiago
+    
+    p.travel 
+      | Valparaiso
 
-    h3.travel Italy
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+
+    h3.travel(id="Colombia") Colombia
 
     p.travel 
-      | Rome, Milan, Venice, Florence
+      | Bogota
+  
+    p.travel 
+      | Cartagena
+    
+    p.travel 
+      | Medellin
+    
+    p.travel 
+      | San Andres
 
-    h3.travel Netherlands
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+
+    h3.travel(id="Peru") Peru
 
     p.travel 
-      | Amsterdam, Den Haag
+      | Aguas Calientes
+    
+    p.travel 
+      | Arequipa
+    
+    p.travel 
+      | Cusco
 
-    h3.travel United Kingdom
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+
+    h3.travel(id="Uruguay") Uruguay
 
     p.travel 
-      | London, Ediburgh, Glasgow, Sunderland, Liverpool, Manchester
+      | Colonia
+    
+    p.travel 
+      | Monteviedo
 
-    img#personal(src="webpage/indonesia.jpg")
+    br
+    br
+    br
+    <a class="travelBackTop" href="#top">Back to the top</a>
+    br
+    br
+    br
+
+    img#travel(src="webpage/indonesia.jpg")
 
     h3.quoteBottom "Allt är inte guld som glimmar. Allt sak har sin tid"
       br
