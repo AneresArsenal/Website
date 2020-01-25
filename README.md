@@ -10,8 +10,6 @@ A website to showcase my personal portfolio and practice my user interface desig
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Heroku](https://www.heroku.com/) - Cloud application platform
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
 ## Author(s)
 
 * Serena 
