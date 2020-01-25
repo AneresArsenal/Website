@@ -1,7 +1,6 @@
-# My Portfolio Website
+# [My Portfolio Website](https://aneresyat.herokuapp.com/)
 A website to showcase my personal portfolio and practice my user interface design and web development skills.
 
-## Link to my [Website](https://aneresyat.herokuapp.com/) 
 
 ## Built With
 
