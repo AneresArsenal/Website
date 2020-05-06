@@ -1,29 +1,12 @@
-sidebar
+<div class="nav col-left">
+    <a class="btn btn-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> ☰ Menu</a>
+</div>
 
-div(id="mySidebar" class="sidebar")
-  a(href="javascript:void(0)" class="closebtn" onclick="closeNav()") ×
-  a(href="/mainpage" type="button") Home
-  a(href="/diary" type="button") Learning Diary
-  a(href="/projects" type="button") Projects
-  a(href="/data" type="button") Data Playground 
-  //- a(href="/personal" type="button") Personal Adventures
-  a(href="/myStory" type="button") My Story
-  div(class="dropdown")
-    a(href="/travel" class="dropbtn" type="button") Travel Adventures
-      
-    div(class="dropdown-content")
-      a(href="/travel-asia") Asia
-      a(href="/travel-europe") Europe
-      a(href="/travel-northamerica") North America
-      a(href="/travel-southamerica") South America
-  //- a(href="/about" type="button") About Me
-
-div(id="side")
-  a(class="openbtn" onclick="openNav()") ☰ Menu
-
-link(href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet")
-link(rel="stylesheet" href="/stylesheets/main.css")
-script(src="/javascripts/main.js")
-
-
-
+<div class="navbar-collapse navbar-dark collapse bg-dark" id="collapseExample">
+    <a class="nav-item" href="/mainpage" type="button">Home</a>
+    <a class="nav-item" href="/diary" type="button">Learning Diary</a>
+    <a class="nav-item" href="/projects" type="button">Projects</a>
+    <a class="nav-item" href="/data" type="button">Data Playground </a>
+    <a class="nav-item" href="/personal" type="button">Personal Adventures</a>
+    <a class="nav-item" href="/myStory" type="button">My Story</a>
+</div>
