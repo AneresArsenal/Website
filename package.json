@@ -1,39 +1,43 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "description": "This example is so cool.",
-  "engines": {
-    "node": "12.x"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "node test.js",
-    "start": "node index.js"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "author": "serena-tay",
-  "license": "ISC",
-  "dependencies": {
-    "counterup2": "^1.0.4",
-    "ejs": "^2.6.2",
-    "express": "^4.16.4",
-    "forever": "^0.15.3",
-    "moment": "^2.24.0",
-    "mysql": "^2.16.0",
-    "pug": "^2.0.3",
-    "waypoints": "^4.0.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.10",
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://aneresyat.herokuapp.com/"
-  }
+    "name": "personal-website",
+    "version": "1.0.0",
+    "description": "This example is so cool.",
+    "engines": {
+        "node": "12.x"
+    },
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js",
+        "start": "node index.js"
+    },
+    "keywords": [
+        "node",
+        "heroku",
+        "express"
+    ],
+    "author": "serena-tay",
+    "license": "ISC",
+    "dependencies": {
+        "@popperjs/core": "^2.4.0",
+        "bootstrap": "^4.4.1",
+        "counterup2": "^1.0.4",
+        "ejs": "^2.6.2",
+        "express": "^4.16.4",
+        "forever": "^0.15.3",
+        "jquery": "^1.9.1",
+        "moment": "^2.24.0",
+        "mysql": "^2.16.0",
+        "popper.js": "^1.12.9",
+        "pug": "^2.0.3",
+        "waypoints": "^4.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10",
+        "request": "^2.81.0",
+        "tape": "^4.7.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://aneresyat.herokuapp.com/"
+    }
 }
