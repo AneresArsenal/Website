@@ -63,11 +63,20 @@ body {
 }
 
 .sideHeader {
-    float: left;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 25;
+    font-size: 1.5vw;
     font-weight: bold;
-    margin-bottom: 0;
+    /* margin-bottom: 10px; */
+}
+
+.badge-pill {
+    padding: 1em;
+    border-radius: 10rem;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.25vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.25vw;
 }
 
 .quote {
@@ -108,10 +117,12 @@ body {
 }
 
 #headshot {
-    float: right;
-    height: 50%;
-    width: 16%;
-    margin-right: 10px;
+    transform: rotate(270deg);
+    height: 140%;
+    width: 80%;
+    margin-bottom: 0%;
+    margin-left: 50px;
+    padding-left: 20px;
 }
 
 h1.main {
@@ -123,23 +134,31 @@ h1.main {
     padding-top: 30px;
 }
 
+.container {
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
 h1.about {
+    font-size: 3vw;
     background-color: #fafafafa;
     color: rgb(59, 57, 57);
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bold;
     line-height: 32px;
-    margin-left: 10%;
-    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 h2.about {
+    font-size: 1.5vw;
     background-color: #fafafafa;
     color: rgb(59, 57, 57);
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bold;
     line-height: 32px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px;
+    margin-left: 25%;
+    margin-right: 25%; */
 }
 
 h2.main {
@@ -318,7 +337,7 @@ p.aboutSide {
     font-size: 15;
     margin-bottom: 0;
     margin-left: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-right: 15px;
     text-align: left;
     width: 100%;

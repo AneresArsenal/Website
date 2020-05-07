@@ -7,36 +7,47 @@ html
   include includes/links.pug
 
   body.about
-    h1.about Serena Tay
-    h2.about Software Developer, Data Analytics Enthusiast and Proud Shareholder of Real Oviedo FC 
+    .container(id="container")
+      .row(class="row-cols-3")
+        .col-3
+        .col-6
+          h1.about Serena Tay
+          h2.about Software Developer, Data Analytics Enthusiast and Proud Shareholder of Real Oviedo FC 
+        .col-3
+          img#headshot(src='/images/profilepic.jpg' alt='headshot')
+    
+
     .row
       .sideColumn 
         .sideHeader Profile
           p.aboutSide
-            | Software developer and data analyst with six years of management consulting and financial data analysis experience. 
-            | Expansive exposure to biopharmaceutical companies, retail and mining corporations. 
-            | Diligent individual with strong passion for software development.
+            | Software developer with seven years of management consulting and financial data analysis experience. 
+            | Extensive exposure to biopharmaceutical companies, retail and mining corporations. 
+            | 
         .sideHeader Technical Skill Sets
           .container
-            .progress-bar
-              .progress-track
-                .progress-fill1 Python (Numpy & Pandas)
-            
-            .progress-bar
-              .progress-track
-                .progress-fill2 SQL
+            <span class="badge badge-pill badge-success">Python</span>
+            <span class="badge badge-pill badge-success">C++ and C</span>
+            <span class="badge badge-pill badge-success">SQL</span>
+            <span class="badge badge-pill badge-success">Bash</span>
+            <span class="badge badge-pill badge-success">JavaScript</span>
+            <span class="badge badge-pill badge-success">HTML and CSS</span>
+            <span class="badge badge-pill badge-success">Flask</span>
+            <span class="badge badge-pill badge-success">NodeJS</span>
 
-            .progress-bar
-              .progress-track
-                .progress-fill3 C++ and C
+        .sideHeader Technology and Tools
+          .container
+            <span class="badge badge-pill badge-primary">AWS Elastic Beanstalk</span>
+            <span class="badge badge-pill badge-primary">EC2</span>
+            <span class="badge badge-pill badge-primary">JIRA</span>
+            <span class="badge badge-pill badge-primary">GitLab</span>
+            <span class="badge badge-pill badge-primary">AWS CodePipeline</span>
+            <span class="badge badge-pill badge-primary">Google Cloud</span>
+            <span class="badge badge-pill badge-primary">Google Script</span>
+            <span class="badge badge-pill badge-primary">Postman</span>
+            <span class="badge badge-pill badge-primary">Firebase</span>
+            <span class="badge badge-pill badge-primary">DynamoDB</span>
             
-            .progress-bar
-              .progress-track
-                .progress-fill4 JavaScript, HTML & CSS
-
-            .progress-bar
-              .progress-track
-                .progress-fill5 R
         //- .sideHeader Academic Achievements
         //-   p.aboutSide
         //-     strong(style="font-size:18px; color:#191970") Bachelor of Science in Computer Science
@@ -70,10 +81,10 @@ html
         //-     strong(style="font-style:italic") 2012
         .sideHeader Other Information
           p.aboutSide
-            strong(style="font-size:15px; color:#191970") Availability
-            br
-            | Available with two weeks’ notice
-            br
+            //- strong(style="font-size:15px; color:#191970") Availability
+            //- br
+            //- | Available with two weeks’ notice
+            //- br
             strong(style="font-size:15px; color:#191970") Professional References
             br
             | Available upon request
@@ -181,7 +192,6 @@ html
             | 2012
             br
             i Manchester Business School, University of Manchester
-      img#headshot(src='/images/profilepic.jpg' alt='headshot')
 
     h3.quoteBottom "It is our choices, Harry, that show what we truly are, far more than our abilities." Professor Albus Dumbledore
 
