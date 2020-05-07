@@ -98,7 +98,7 @@ body {
     line-height: 32px;
     margin-left: 17%;
     margin-right: 17%;
-    padding-bottom: 20px;
+    margin-bottom: 3vw;
     padding-top: 0;
     text-align: center;
 }
@@ -300,9 +300,10 @@ h3.travel {
 
 p.main {
     color: rgb(29, 26, 26);
+    padding-top: 15px;
     font-size: 1.5vw;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: justify;
     transition: margin-left .5s;
 }
@@ -422,6 +423,7 @@ li.about {
     cursor: pointer;
     color: white;
     padding: 10px 15px;
+    margin-left: 30px;
     left: 40px;
     border: none;
     margin-bottom: 10px;
@@ -431,6 +433,10 @@ li.about {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40;
+}
+
+#travelButton {
+    margin-left: 0px;
 }
 
 .navbar-collapse {
@@ -444,6 +450,7 @@ li.about {
 
 .navbar-collapse a {
     text-decoration: none;
+    padding: 10px;
     font-size: 1.25vw;
     color: #f1f1f1;
     display: block;
@@ -681,13 +688,12 @@ li.about {
     display: block;
 } */
 
-linkbar {
-    background-color: #111;
+.d-flex {
+    font-size: 1.5vw;
     bottom: 0;
-    float: center;
+    align-items: center;
     height: 50px;
     left: 0;
-    padding-bottom: 10px;
     position: fixed;
     /* Fixed navbar (stay in place on scroll) */
     overflow-x: hidden;
@@ -695,25 +701,17 @@ linkbar {
     text-align: center;
     width: 100%;
     /* Set the width of the navbar */
-    z-index: 10;
-}
-
-.linkbar {
-    background-color: #111;
-    font-size: 1.5vw;
-    text-align: center;
-    margin-top: 10px;
     text-decoration-line: none;
 }
 
-.linkbar a {
+.d-flex a {
     margin: 20px;
-    color: #818181;
+    color: #f1f1f1;
     text-decoration-line: none;
 }
 
-.linkbar a:hover {
-    color: #f1f1f1;
+.d-flex a:hover {
+    color: #b4afaf;
     text-decoration-line: none;
 }
 
@@ -884,6 +882,7 @@ img {
     font-size: 1.8vw;
     font-weight: bold;
     margin-left: 3%;
+    margin-bottom: 2vw;
 }
 
 .typewriter-text-mystory {
