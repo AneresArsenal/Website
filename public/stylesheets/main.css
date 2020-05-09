@@ -14,7 +14,7 @@ body {
     background-color: #fafafafa;
     color: rgb(59, 57, 57);
     font-family: 'Arvo', serif;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: center;
     transition: margin-left .5s;
 }
@@ -22,16 +22,15 @@ body {
 .column {
     float: left;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 30;
     font-weight: bold;
     margin-bottom: 0;
-    width: 50%;
+    width: 65%;
 }
 
 .header {
     float: left;
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 25;
+    font-size: 1.75rem;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
@@ -64,7 +63,7 @@ body {
 
 .sideHeader {
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-weight: bold;
     /* margin-bottom: 10px; */
 }
@@ -118,11 +117,10 @@ body {
 
 #headshot {
     transform: rotate(270deg);
-    height: 140%;
-    width: 80%;
+    height: 12rem;
+    width: 15rem;
     margin-bottom: 0%;
-    margin-left: 50px;
-    padding-left: 20px;
+    margin-left: 1rem;
 }
 
 h1.main {
@@ -143,25 +141,28 @@ h1.main {
 }
 
 h1.about {
-    font-size: 3vw;
+    font-size: 3rem;
     background-color: #fafafafa;
     color: rgb(59, 57, 57);
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bold;
-    line-height: 32px;
-    margin-bottom: 30px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
 }
 
 h2.about {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     background-color: #fafafafa;
     color: rgb(59, 57, 57);
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bold;
-    line-height: 32px;
-    /* padding-bottom: 30px;
-    margin-left: 25%;
-    margin-right: 25%; */
+    line-height: 2rem;
+}
+
+#PEheader {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
 }
 
 h2.main {
@@ -337,21 +338,26 @@ p.main {
 p.aboutSide {
     color: rgb(29, 26, 26);
     font-family: 'Arvo', serif;
-    font-size: 15;
+    font-size: 1rem;
     margin-bottom: 0;
-    margin-left: 40px;
-    padding-bottom: 15px;
-    padding-right: 15px;
+    margin-left: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
     text-align: left;
     width: 100%;
 }
 
 p.about {
     color: rgb(29, 26, 26);
-    font-size: 16;
+    font-size: 1rem;
     margin-bottom: 0;
-    margin-left: 50px;
+    margin-left: 4rem;
     text-align: left;
+}
+
+#otherinfo {
+    color: #191970;
+    font-size: 1rem;
 }
 
 p.diary {
@@ -632,88 +638,6 @@ li.about {
     padding: 16px;
 }
 
-
-/* The subnavigation menu */
-
-
-/* .subnav,
-.dropdown {
-    float: left;
-    overflow: hidden;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-
-} */
-
-
-/* Subnav button */
-
-
-/* .subnav .subnavbtn,
-.dropdown .dropbtn {
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-} */
-
-
-/* Add a red background color to navigation links on hover */
-
-
-/* .subnav:hover .subnavbtn,
-.dropdown:hover .dropbtn {
-    color: #f1f1f1;
-} */
-
-
-/* Style the subnav content - positioned absolute */
-
-
-/* .subnav-content,
-.dropdown-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-} */
-
-
-/* Style the subnav links */
-
-
-/* .subnav-content a,
-.dropdown-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-} */
-
-
-/* Add a grey background color on hover */
-
-
-/* .subnav-content a:hover,
-.dropdown-content a:hover {
-    color: #f1f1f1;
-} */
-
-
-/* When you move the mouse over the subnav container, open the subnav content */
-
-
-/* .subnav:hover .subnav-content,
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
-
 .d-flex {
     font-size: 1.5vw;
     bottom: 0;
@@ -728,6 +652,7 @@ li.about {
     width: 100%;
     /* Set the width of the navbar */
     text-decoration-line: none;
+    z-index: 999;
 }
 
 .d-flex a {
@@ -911,16 +836,30 @@ img {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     body {
         padding-left: 1rem;
     }
-    h3.diaryTop {
+    h3.diaryTop,
+    h3.projectstop,
+    h3.projects {
         font-size: 0.7rem;
         line-height: 1rem;
         margin-left: 0.5rem;
         margin-right: 0;
         text-align: Left;
+    }
+    h3.datatop,
+    h3.data {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    h3.projectstop {
+        margin-top: 1rem;
     }
     h3.diary {
         font-size: 0.7rem;
@@ -931,6 +870,17 @@ img {
     }
     .typewriter {
         padding-top: 0;
+    }
+    .typewriter-text,
+    .typewriter-text-mystory,
+    .typewriter-text-mystory1,
+    .typewriter-text-mystory2,
+    .typewriter-text-mystory3,
+    .typewriter-text-mystory4,
+    .typewriter-text-mystory5 {
+        font-size: 3vw;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     p.main {
         font-size: 0.25rem;
@@ -981,19 +931,18 @@ img {
         flex-grow: 3;
         max-width: 45%;
     }
-    .col-6 {
-        padding: 0;
-        width: 6rem;
-        flex-grow: 3;
-        max-width: 50%;
-        padding-right: 1rem;
-    }
+    .col-6,
     .col-7 {
         padding: 0;
         width: 6rem;
         flex-grow: 3;
         max-width: 50%;
-        padding-right: 1rem;
+        margin-right: 0.25rem;
+    }
+    .col-8,
+    .col-9 {
+        padding: 0;
+        flex-grow: 3;
     }
     .col-1 {
         padding: 0;
@@ -1002,13 +951,99 @@ img {
     .row {
         margin-left: 0.5rem;
     }
-    p.diary {
+    .sideColumn {
+        width: 40%;
+        margin: 0;
+    }
+    .column {
+        margin: 0;
+        padding-left: 0.5rem;
+        width: 60%;
+    }
+    p.diary,
+    p.projects,
+    p.data,
+    p.myStory {
         font-size: 0.5rem;
-        margin-left: 3vw;
-        margin-right: 2vw;
-        margin-bottom: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin: 0;
         padding-bottom: 0.5rem;
-        text-align: left;
+        text-align: justify;
         line-height: 1rem;
+    }
+    p.aboutSide {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    p.about {
+        font-size: 0.65rem;
+        line-height: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    h1.about {
+        font-size: 1.5rem;
+    }
+    h2.about {
+        font-size: 1rem;
+        padding: 0;
+    }
+    #aboutTop1 {
+        width: 5%;
+        margin: 0;
+        padding: 0;
+    }
+    #aboutTop {
+        margin-right: 0;
+        width: 50%;
+    }
+    #aboutTopPic {
+        width: 30%;
+    }
+    #headshot {
+        height: 8rem;
+        width: 11rem;
+        margin: 0;
+    }
+    #otherinfo {
+        color: #191970;
+        font-size: 0.65rem;
+        margin-bottom: 0.5rem;
+    }
+    #other {
+        line-height: 1.25rem;
+    }
+    #aa {
+        padding-right: 0.5rem;
+        text-align: justify;
+    }
+    .sideHeader {
+        font-size: 0.9rem;
+    }
+    .badge-pill {
+        font-size: 0.5rem;
+    }
+    .header {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    #PEheader {
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0;
+    }
+    li.about {
+        font-size: 0.4rem;
+        line-height: 1rem;
+        margin: 0;
+    }
+    #aboutRow {
+        width: 30rem;
+        margin: 0;
     }
 }

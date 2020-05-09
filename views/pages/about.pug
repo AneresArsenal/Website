@@ -9,15 +9,15 @@ html
   body.about
     .container(id="container")
       .row(class="row-cols-3")
-        .col-3
-        .col-6
+        .col-1(id="aboutTop1")
+        .col-7(id="aboutTop")
           h1.about Serena Tay
           h2.about Software Developer, Data Analytics Enthusiast and Proud Shareholder of Real Oviedo FC 
-        .col-3
+        .col-3(id="aboutTopPic")
           img#headshot(src='/images/profilepic.jpg' alt='headshot')
     
 
-    .row
+    .row(id="aboutRow")
       .sideColumn 
         .sideHeader Profile
           p.aboutSide
@@ -36,7 +36,7 @@ html
                    <span class="badge badge-pill badge-success">Flutter and Dart</span>
             <span class="badge badge-pill badge-success">NodeJS</span>
 
-        .sideHeader Technology and Tools
+        .sideHeader Technology & Tools
           .container
             <span class="badge badge-pill badge-primary">AWS Elastic Beanstalk</span>
             <span class="badge badge-pill badge-primary">EC2</span>
@@ -82,115 +82,109 @@ html
         //-     | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         //-     strong(style="font-style:italic") 2012
         .sideHeader Other Information
-          p.aboutSide
+          p.aboutSide(id="other")
             //- strong(style="font-size:15px; color:#191970") Availability
             //- br
             //- | Available with two weeks’ notice
             //- br
-            strong(style="font-size:15px; color:#191970") Professional References
+            strong(id="otherinfo") Professional References
             br
             | Available upon request
             br
-            strong(style="font-size:15px; color:#191970") Spoken Languages
+            strong(id="otherinfo") Spoken Languages
             br
             | English, Mandarin, Bahasa Malay, Spanish (basic), Swedish (basic)
             br
-            strong(style="font-size:15px; color:#191970") Personal Interests
+            strong(id="otherinfo") Personal Interests
             br
             | English Premier League, Acrylic Painting and Culinary Arts
             br
-            strong(style="font-size:15px; color:#191970") Community Involvement
+            strong(id="otherinfo") Community Involvement
             br
             | Whitecaps FC Matchday Photographer 
             br
             |(2014 – Present)
-        .sideHeader Scholarships and Awards
-          p.aboutSide
-            strong(style="font-size:15px; color:#191970") Academic Scholarships
+        .sideHeader Scholarships + Awards
+          p.aboutSide(id="other")
+            strong(id="otherinfo") Academic Scholarships
             br
             | Dean's Honour Roll
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            | &nbsp;&nbsp;
             | (2009 - 2012)
             br
             | Sauder Global Exchange Schorlarship
-            //- | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            //- | 2012
             br
             | President's Entrance Scholarship
-            //- | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            //- | 2008
             br
-            strong(style="font-size:15px; color:#191970") Community Involvement
+            strong(id="otherinfo") Community Involvement
             br
             | Whitecaps FC Rookie of the Year
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            | 2015
             br
             | Manchester Leadership Programme Gold Award
            
       .column 
         .header Professional Experience
           p.about 
-            strong(style="color:#191970") Management Consultant KPMG LLP 
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            | 2018 - 2019
-            li.about Conducted current state assessments for multinational mining corporations by leveraging background in financial audit to gather insights for the financial reporting process redesign project
-            li.about Analyzed operational data for property management company to identify cost drivers and derive options to assess possibility of achieving breakeven in future operations
-            li.about Assisted in workshop facilitation to gather system design requirements during ERP vendor selection process
+            .row(id="PEheader")
+              .col-8(style="color:#191970") Management Consultant KPMG LLP 
+              .col-4 2018 - 2019
+            .col
+              li.about Conducted current state assessments for multinational mining corporations by leveraging background in financial audit to gather insights for the financial reporting process redesign project
+              li.about Analyzed operational data for property management company to identify cost drivers and derive options to assess possibility of achieving breakeven in future operations
+              li.about Assisted in workshop facilitation to gather system design requirements during ERP vendor selection process
           p.about 
-            strong(style="color:#191970") Staff Accountant KPMG LLP 
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            | 2016 - 2018
-            li.about Conducted current state assessments for multinational mining corporations by leveraging background in financial audit to gather insights for the financial reporting process redesign project
-            li.about Analyzed operational data for property management company to identify cost drivers and derive options to assess possibility of achieving breakeven in future operations
-            li.about Assisted in workshop facilitation to gather system design requirements during ERP vendor selection process
+            .row(id="PEheader")
+              .col-7(style="color:#191970") Staff Accountant KPMG LLP 
+              .col 2016 - 2018
+            .col
+              li.about Conducted current state assessments for multinational mining corporations by leveraging background in financial audit to gather insights for the financial reporting process redesign project
+              li.about Analyzed operational data for property management company to identify cost drivers and derive options to assess possibility of achieving breakeven in future operations
+              li.about Assisted in workshop facilitation to gather system design requirements during ERP vendor selection process
         .header Software Development Experience
           p.about 
-            strong(style="color:#191970") Introduction to Databases 
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            | [ SQL, Python, JS ] 
-            li.about Utilized HTML parser (BeautifulSoup) to extract data from websites
-            li.about Project aim is to perform various machine learning analysis on club spending behaviour and how it affects clubs’ performances
-            li.about GitHub: https://git.io/fjOuU
+            .row(id="PEheader")
+              .col-7(style="color:#191970") Introduction to Databases 
+              .col [ SQL, Python, JS ] 
+            .col  
+              li.about Utilized HTML parser (BeautifulSoup) to extract data from websites
+              li.about Project aim is to perform various machine learning analysis on club spending behaviour and how it affects clubs’ performances
+              li.about GitHub: https://git.io/fjOuU
           p.about 
-            strong(style="color:#191970") Computing for Data Analytics
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            | [ Python, SQL ]  
-            li.about Employed analytical computing tools such as NumPy and Pandas to perform data mining and data manipulation for analysis
+            .row(id="PEheader")
+              .col-8(style="color:#191970") Computing for Data Analytics
+              .col [ Python, SQL ]  
+            .col
+              li.about Employed analytical computing tools such as NumPy and Pandas to perform data mining and data manipulation for analysis
           p.about 
-            strong(style="color:#191970") Introduction to Computer Science I and II
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            | [ C++ ] 
-            li.about Applied programming fundamentals such as polymorphism, recursions and inheritance to complete course projects
-            li.about GitHub: https://git.io/fhgtQ
+            .row(id="PEheader")
+              .col-10(style="color:#191970") Introduction to Computer Science I and II
+              .col [ C++ ] 
+            .col  
+              li.about Applied programming fundamentals such as polymorphism, recursions and inheritance to complete course projects
+              li.about GitHub: https://git.io/fhgtQ
         .header Academic Achivements
-          p.about 
+          p.about(id="aa")
             strong #[a(href="http://eecs.oregonstate.edu/online-cs-students" target="_blank" style="color:#191970; text-decoration:none") Bachelor of Science in Computer Science #[span]]
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             | (expected) 2020
             br
             i Oregon State University
             br
             strong #[a(href="https://pe.gatech.edu/degrees/analytics" target="_blank" style="color:#191970; text-decoration:none") Master of Science in Analytics #[span]]
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             | (expected) 2021
             br
             i Georgia Tech University
             br
             strong #[a(href="https://www.cpacanada.ca/en/the-cpa-profession" target="_blank" style="color:#191970; text-decoration:none") Chartered Professional Accountant #[span]]
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             | 2017
             br
             i CPA Western School of Business
             br
             strong #[a(href="https://www.sauder.ubc.ca/Programs/Bachelor_of_Commerce" target="_blank" style="color:#191970; text-decoration:none") Bachelor of Commerce (Hons) #[span]]
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             | 2013
             br
             i Sauder School of Business, University of Britsh Columbia
             br
             strong #[a(href="https://www.mbs.ac.uk/study/undergraduate/your-career/international-exchange/" target="_blank" style="color:#191970; text-decoration:none") International Management Exchange Programme #[span]]
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             | 2012
             br
             i Manchester Business School, University of Manchester
