@@ -137,6 +137,9 @@ h1.main {
 .container {
     max-width: 100%;
     margin-bottom: 1%;
+    margin-left: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 h1.about {
@@ -738,105 +741,6 @@ li.about {
     text-decoration-line: none;
 }
 
-
-/* 
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 420px;
-    margin: 10px;
-    margin-left: 20px;
-    overflow: hidden;
-    float: left;
-}
-
-.progress-bar {
-    float: left;
-    height: 50px;
-    width: 100%;
-    padding: 12px;
-}
-
-.progress-track {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    vertical-align: middle;
-}
-
-.progress-fill1 {
-    position: relative;
-    background: rgb(31, 248, 3);
-    height: 30px;
-    vertical-align: middle;
-    width: 100%;
-    color: rgb(31, 28, 28);
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 15px;
-}
-
-.progress-fill2 {
-    position: relative;
-    background: rgb(31, 248, 3);
-    height: 30px;
-    vertical-align: middle;
-    width: 80%;
-    color: rgb(31, 28, 28);
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 15px;
-}
-
-.progress-fill3 {
-    position: relative;
-    background: rgb(31, 248, 3);
-    height: 30px;
-    vertical-align: middle;
-    width: 60%;
-    color: rgb(31, 28, 28);
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 15px;
-}
-
-.progress-fill4 {
-    position: relative;
-    background: rgb(31, 248, 3);
-    height: 30px;
-    vertical-align: middle;
-    width: 50%;
-    color: rgb(31, 28, 28);
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 15px;
-}
-
-.progress-fill5 {
-    position: relative;
-    background: rgb(31, 248, 3);
-    height: 30px;
-    vertical-align: middle;
-    width: 30%;
-    color: rgb(31, 28, 28);
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 15px;
-}
-
-.progress-track,
-.progress-fill {
-    border-radius: 3px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
-}
-*/
-
 img {
     height: 65%;
     width: 30%;
@@ -877,7 +781,7 @@ img {
 .typewriter {
     font-family: Courier, monospace;
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 0.2rem;
 }
 
 .typewriter-text {
@@ -1004,5 +908,107 @@ img {
     }
     50% {
         border-color: orange;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        padding-left: 1rem;
+    }
+    h3.diaryTop {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0;
+        text-align: Left;
+    }
+    h3.diary {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0;
+        text-align: Left;
+    }
+    .typewriter {
+        padding-top: 0;
+    }
+    p.main {
+        font-size: 0.25rem;
+        line-height: 1rem;
+    }
+    .d-flex {
+        font-size: 0.7rem;
+        height: 10vh;
+    }
+    .btn {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+    }
+    .navbar-collapse a {
+        padding: 0;
+        line-height: 1.5rem;
+        font-size: 0.5rem;
+    }
+    .navbar-collapse {
+        line-height: 1.5rem;
+        font-size: 0.5rem;
+    }
+    #travelButton {
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    .quoteBottom {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-bottom: 1.5rem;
+        ;
+    }
+    #main {
+        height: 40vh;
+        width: 70vw;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .col-5 {
+        padding: 0;
+        width: 5.5rem;
+        flex-grow: 3;
+        max-width: 45%;
+    }
+    .col-4 {
+        padding: 0;
+        width: 5.5rem;
+        flex-grow: 3;
+        max-width: 45%;
+    }
+    .col-6 {
+        padding: 0;
+        width: 6rem;
+        flex-grow: 3;
+        max-width: 50%;
+        padding-right: 1rem;
+    }
+    .col-7 {
+        padding: 0;
+        width: 6rem;
+        flex-grow: 3;
+        max-width: 50%;
+        padding-right: 1rem;
+    }
+    .col-1 {
+        padding: 0;
+        max-width: 5vw;
+    }
+    .row {
+        margin-left: 0.5rem;
+    }
+    p.diary {
+        font-size: 0.5rem;
+        margin-left: 3vw;
+        margin-right: 2vw;
+        margin-bottom: 0;
+        padding-bottom: 0.5rem;
+        text-align: left;
+        line-height: 1rem;
     }
 }
