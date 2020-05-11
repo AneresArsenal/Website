@@ -123,10 +123,11 @@ html
             | Manchester Leadership Programme Gold Award
            
       .column 
-        .header Professional Experience
+        .header 
+          .row(id="aboutHeader") Professional Experience
           p.about 
             .row(id="PEheader")
-              .col-8(style="color:#191970") Management Consultant KPMG LLP 
+              .col(id="jobTitle") Management Consultant KPMG LLP 
               .col-4 2018 - 2019
             .col
               li.about Conducted current state assessments for multinational mining corporations by leveraging background in financial audit to gather insights for the financial reporting process redesign project
@@ -134,60 +135,60 @@ html
               li.about Assisted in workshop facilitation to gather system design requirements during ERP vendor selection process
           p.about 
             .row(id="PEheader")
-              .col-7(style="color:#191970") Staff Accountant KPMG LLP 
-              .col 2016 - 2018
+              .col(id="jobTitle") Staff Accountant KPMG LLP 
+              .col-4 2016 - 2018
             .col
               li.about Conducted current state assessments for multinational mining corporations by leveraging background in financial audit to gather insights for the financial reporting process redesign project
               li.about Analyzed operational data for property management company to identify cost drivers and derive options to assess possibility of achieving breakeven in future operations
               li.about Assisted in workshop facilitation to gather system design requirements during ERP vendor selection process
-        .header Software Development Experience
+        .header
+          .row(id="aboutHeader") Software Development Experience
           p.about 
             .row(id="PEheader")
-              .col-7(style="color:#191970") Introduction to Databases 
-              .col [ SQL, Python, JS ] 
+              .col(id="jobTitle") Introduction to Databases 
+              .col-4 [ SQL, Python, JS ] 
             .col  
               li.about Utilized HTML parser (BeautifulSoup) to extract data from websites
               li.about Project aim is to perform various machine learning analysis on club spending behaviour and how it affects clubs’ performances
               li.about GitHub: https://git.io/fjOuU
           p.about 
             .row(id="PEheader")
-              .col-8(style="color:#191970") Computing for Data Analytics
-              .col [ Python, SQL ]  
+              .col(id="jobTitle") Computing for Data Analytics
+              .col-4 [ Python, SQL ]  
             .col
               li.about Employed analytical computing tools such as NumPy and Pandas to perform data mining and data manipulation for analysis
           p.about 
             .row(id="PEheader")
-              .col-10(style="color:#191970") Introduction to Computer Science I and II
-              .col [ C++ ] 
+              .col(id="jobTitle") Introduction to Computer Science I and II
+              .col-4 [ C++ ] 
             .col  
               li.about Applied programming fundamentals such as polymorphism, recursions and inheritance to complete course projects
               li.about GitHub: https://git.io/fhgtQ
-        .header Academic Achivements
-          p.about(id="aa")
-            strong #[a(href="http://eecs.oregonstate.edu/online-cs-students" target="_blank" style="color:#191970; text-decoration:none") Bachelor of Science in Computer Science #[span]]
-            | (expected) 2020
-            br
-            i Oregon State University
-            br
-            strong #[a(href="https://pe.gatech.edu/degrees/analytics" target="_blank" style="color:#191970; text-decoration:none") Master of Science in Analytics #[span]]
-            | (expected) 2021
-            br
-            i Georgia Tech University
-            br
-            strong #[a(href="https://www.cpacanada.ca/en/the-cpa-profession" target="_blank" style="color:#191970; text-decoration:none") Chartered Professional Accountant #[span]]
-            | 2017
-            br
-            i CPA Western School of Business
-            br
-            strong #[a(href="https://www.sauder.ubc.ca/Programs/Bachelor_of_Commerce" target="_blank" style="color:#191970; text-decoration:none") Bachelor of Commerce (Hons) #[span]]
-            | 2013
-            br
-            i Sauder School of Business, University of Britsh Columbia
-            br
-            strong #[a(href="https://www.mbs.ac.uk/study/undergraduate/your-career/international-exchange/" target="_blank" style="color:#191970; text-decoration:none") International Management Exchange Programme #[span]]
-            | 2012
-            br
-            i Manchester Business School, University of Manchester
+        .header 
+          .row(id="aboutHeader") Academic Achivements
+          p.about
+            .row(id="PEheader")
+              .col-8(id="jobTitle") #[a(href="http://eecs.oregonstate.edu/online-cs-students" target="_blank" style="color:#191970; text-decoration:none") Bachelor of Science in Computer Science #[span]]
+              .col(id="date") expected 2020
+            p.about(id="aaLocation") Oregon State University
+            .row(id="PEheader")
+              .col-8(id="jobTitle") #[a(href="https://pe.gatech.edu/degrees/analytics" target="_blank" style="color:#191970; text-decoration:none") Master of Science in Analytics #[span]]
+              .col(id="date") expected 2021
+            p.about(id="aaLocation") Georgia Tech University
+            .row(id="PEheader")
+              .col-8(id="jobTitle") #[a(href="https://www.cpacanada.ca/en/the-cpa-profession" target="_blank" style="color:#191970; text-decoration:none") Chartered Professional Accountant #[span]]
+              .col(id="date") 2017
+            p.about(id="aaLocation") CPA Western School of Business
+            .row(id="PEheader")
+              .col-8(id="jobTitle") #[a(href="https://www.sauder.ubc.ca/Programs/Bachelor_of_Commerce" target="_blank" style="color:#191970; text-decoration:none") Bachelor of Commerce (Hons) #[span]]
+              .col(id="date") 2013
+            p.about(id="aaLocation") Sauder School of Business, University of Britsh Columbia
+            .row(id="PEheader")
+              .col-8(id="jobTitle") #[a(href="https://www.mbs.ac.uk/study/undergraduate/your-career/international-exchange/" target="_blank" style="color:#191970; text-decoration:none") International Management Exchange Programme #[span]]
+              .col(id="date") 2013
+            p.about(id="aaLocation") Manchester Business School, University of Manchester
+
+     
 
     h3.quoteBottom "It is our choices, Harry, that show what we truly are, far more than our abilities." Professor Albus Dumbledore
 
